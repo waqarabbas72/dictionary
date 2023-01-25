@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(195, 193, 193) !important;
+}
+
+.container{
+    margin-top: 10rem;
+    background: linear-gradient(to top left, #0000ff 0%, #ff6666 100%);
+    border-radius:30px;
+    box-shadow: rgba(2, 246, 26, 0.363) 0px 54px 55px, rgb(31, 44, 117) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(255, 0, 0, 0.614) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.searchBox{
+    display: flex;
+    justify-content: space-between;
+}
+#inputArea{
+    width: 75%;
+    padding: 5px;
+    border:none;
+    outline: none;
+    border-bottom: 3px solid rgb(0, 185, 9);
+    font-size: 20px;
+    background: transparent;
+    color :white;
+}
+
+#searchBtn{
+    padding: 0 20px;
+    border: none;
+    font-size: 18px;
+    background-color: rgb(0, 185, 9);
+    color: white;
+    border-radius: 5px;
+}
+
+.word-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+    color: rgb(222, 218, 218);
+}
+
+#soundBtn{
+    font-size: 25px;
+}
+
+p{
+    font-size: 18px;
+}
+.word-meaning ,.word-example{
+    margin: 20px;
+}
+
+.word-meaning p {
+    color: white;
+}
+
+.word-example{
+    border-left: 4px solid rgb(116, 111, 250);
+    padding-left: 8px;
+    font-style: italic;
+}
+.word-example p {
+    color: gray;
+}
+
+.error{
+    text-align: center;
+    color: rgb(224, 66, 66);
+}
+
+@media (max-width:576px) {
+    .searchBox{
+       flex-direction: column;
+       gap: 10px;
+    }
+    #inputArea{
+        width:auto;
+    }
+
+    #searchBtn{
+        padding: 5px 0;
+    }
+}
